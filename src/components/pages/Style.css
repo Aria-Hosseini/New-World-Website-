@@ -1,0 +1,38 @@
+.glowing-text {
+    animation: glow 2s infinite;
+    position: relative;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 10px #7FCBB2, 0 0 15px #7FCBB2;
+    }
+    50% {
+        text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7FCBB2, 0 0 25px #7FCBB2;
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 10px #7FCBB2, 0 0 15px #7FCBB2;
+    }
+}
+
+@keyframes subtle-move {
+    0% {
+        transform: translate(0, 0); /* نقطه شروع */
+    }
+    25% {
+        transform: translate(10px, -10px); /* حرکت به راست و بالا */
+    }
+    50% {
+        transform: translate(-15px, 15px); /* حرکت به چپ و پایین */
+    }
+    75% {
+        transform: translate(10px, 10px); /* حرکت به راست و پایین */
+    }
+    100% {
+        transform: translate(0, 0); /* بازگشت به نقطه شروع */
+    }
+}
+
+.animated-image {
+    animation: subtle-move 3s infinite ease-in-out;
+}
