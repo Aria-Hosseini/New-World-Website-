@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate ,Link } from "react-router-dom"
 
 export default function Header() {
     const navigate = useNavigate()
@@ -6,7 +6,7 @@ export default function Header() {
         <div className="flex items-center justify-center">
         <div className="flex flex-col items-center mt-3 justify-center w-300 bg-[#161616]/50 shadow-xl p-3 space-y-3 backdrop-blur-md rounded-2xl">
         <div className="flex flex-row-reverse justify-between items-center w-full">
-          <h2 className="text-shadow-lg text-[#17635d] text-right">دنیای جدید</h2>
+        <Link to={'/'}><h2 className="text-shadow-lg text-[#17635d] text-right">دنیای جدید</h2></Link> 
   
         <div className="flex flex-row-reverse items-center space-x-3">
           <button className="cursor-pointer text-shadow-lg w-10 h-8 ml-3">
