@@ -1,4 +1,4 @@
-# My Site Project
+# NEW WORLD Project
 A modern, interactive web application with stunning animations and 3D elements, built with cutting-edge technologies.
 
 ## English
